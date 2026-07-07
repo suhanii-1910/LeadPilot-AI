@@ -2,7 +2,7 @@
 
 An AI-powered Lead Qualification Platform that automatically extracts, analyzes, scores, and prioritizes customer leads using Google Gemini AI.
 
-Instead of manually reading inquiry emails or contact form submissions, LeadPilot AI converts unstructured customer messages into structured lead data, assigns an AI score, categorizes leads (HOT, WARM, or COLD), stores them across multiple databases, and instantly notifies sales teams about high-value opportunities.
+LeadPilot AI transforms unstructured customer inquiries into structured lead data, intelligently scores each lead, classifies it as **HOT**, **WARM**, or **COLD**, stores the data across multiple platforms, and instantly notifies the sales team about high-priority opportunities.
 
 ---
 
@@ -22,68 +22,27 @@ Instead of manually reading inquiry emails or contact form submissions, LeadPilo
 
 ---
 
-## 🖼️ Screenshots
-
-### Lead Analysis Dashboard
-
-> Add your homepage screenshot here.
-
-```
-assets/dashboard.png
-```
-
-### HOT Lead
-
-> Add your HOT lead screenshot here.
-
-```
-assets/hot-lead.png
-```
-
-### WARM Lead
-
-> Add your WARM lead screenshot here.
-
-```
-assets/warm-lead.png
-```
-
-### COLD Lead
-
-> Add your COLD lead screenshot here.
-
-```
-assets/cold-lead.png
-```
-
----
-
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
-
 - Next.js
 - React
 - TypeScript
 - Axios
 
 ### Backend
-
 - Node.js
 - Express.js
 - TypeScript
 
 ### AI
-
 - Google Gemini API
 
 ### Database
-
 - MongoDB Atlas
 - Supabase
 
 ### Integrations
-
 - Google Sheets API
 - Gmail API
 
@@ -91,35 +50,26 @@ assets/cold-lead.png
 
 ## ⚙️ Workflow
 
+```
 Customer Message
-
-⬇
-
-Gemini AI extracts structured information
-
-⬇
-
+        │
+        ▼
+Google Gemini AI
+(Extract Lead Information)
+        │
+        ▼
 Lead Scoring Engine
-
-⬇
-
-Lead Categorization
-
-⬇
-
-Store in MongoDB
-
-⬇
-
-Store in Supabase
-
-⬇
-
-Store in Google Sheets
-
-⬇
-
-Send Gmail notification (HOT leads only)
+        │
+        ▼
+HOT / WARM / COLD Classification
+        │
+        ├────────► MongoDB
+        ├────────► Supabase
+        ├────────► Google Sheets
+        │
+        ▼
+Send Gmail Alert (HOT Leads Only)
+```
 
 ---
 
@@ -139,8 +89,11 @@ LeadPilot-AI
 │   ├── services
 │   ├── database
 │   ├── models
+│   ├── config
 │   └── server.ts
 │
+├── .env.example
+├── package.json
 └── README.md
 ```
 
@@ -148,34 +101,42 @@ LeadPilot-AI
 
 ## 🚀 Getting Started
 
-Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/suhanii-1910/LeadPilot-AI.git
 ```
 
-Install backend dependencies
+### Install backend dependencies
 
 ```bash
 npm install
 ```
 
-Install frontend dependencies
+### Install frontend dependencies
 
 ```bash
 cd frontend
 npm install
 ```
 
-Create a `.env` file using `.env.example`.
+### Configure Environment Variables
 
-Run backend
+Create a `.env` file using the provided `.env.example` and add your credentials for:
+
+- Google Gemini API
+- MongoDB Atlas
+- Supabase
+- Gmail
+- Google Sheets
+
+### Start Backend
 
 ```bash
 npm run dev
 ```
 
-Run frontend
+### Start Frontend
 
 ```bash
 cd frontend
@@ -184,16 +145,16 @@ npm run dev
 
 ---
 
-## 🎯 Future Improvements
+## 📌 Future Improvements
 
-- Authentication
-- Admin Dashboard
-- CRM Integration
+- User Authentication
 - Analytics Dashboard
-- Lead Search & Filters
-- Export to CSV/PDF
-- Multi-user support
-- AI-generated follow-up emails
+- CRM Integration
+- Lead Search & Filtering
+- Export Leads (CSV/PDF)
+- Multi-user Support
+- AI-generated Follow-up Emails
+- Role-based Access Control
 
 ---
 
@@ -206,6 +167,4 @@ npm run dev
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.
+## ⭐ If you found this project helpful, consider giving it a star!
