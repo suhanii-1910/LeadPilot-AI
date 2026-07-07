@@ -1,0 +1,41 @@
+{
+  "name": "leadpilot-ai",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^2.10.0",
+    "@supabase/supabase-js": "^2.110.0",
+    "@trigger.dev/sdk": "^4.5.0",
+    "@types/node": "^26.1.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "googleapis": "^173.0.0",
+    "mongodb": "^7.4.0",
+    "mongoose": "^9.7.3",
+    "nodemailer": "^9.0.3",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@trigger.dev/build": "^4.5.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/nodemailer": "^8.0.1"
+  }
+}
