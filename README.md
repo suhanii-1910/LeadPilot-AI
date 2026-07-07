@@ -163,7 +163,7 @@ npm run dev
 **Suhani Garg**
 
 - GitHub: https://github.com/suhanii-1910
-- LinkedIn: *(Add your LinkedIn profile here)*
+- LinkedIn:https://www.linkedin.com/in/suhanigarg670
 
 ---
 
